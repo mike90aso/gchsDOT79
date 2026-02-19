@@ -10,14 +10,17 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      /* Dark reddish-brown + light grey (from brand) */
-      --dark: #6F1A1B;
-      --dark-header: #5c1516;
+      /* Dark charcoal + orange/gold */
+      --dark: #1B242C;
+      --dark-header: #151c22;
       --white: #ffffff;
-      --light: #F2F2F2;
-      --gray-mid: #cccccc;
-      --accent: #F2F2F2;
-      --accent-hover: #e5e5e5;
+      --gray-light: #E0E0E0;
+      --gray-mid: #CCCCCC;
+      --off-white: #f4f6f8;
+      --gray-100: #e2e6ea;
+      --gray-500: #6b7280;
+      --accent: #FF9B00;
+      --accent-hover: #e68a00;
     }
 
     *, *::before, *::after { box-sizing: border-box; }
@@ -26,7 +29,7 @@
       font-family: 'DM Sans', system-ui, sans-serif;
       font-size: 1.0625rem;
       line-height: 1.6;
-      color: var(--light);
+      color: var(--gray-light);
       background: var(--dark);
     }
 
@@ -46,7 +49,7 @@
     .site-header .sub {
       margin-top: 0.25rem;
       font-size: 0.9rem;
-      color: var(--light);
+      color: var(--gray-light);
     }
 
     .hero {
@@ -66,7 +69,7 @@
     .hero .tagline {
       font-size: 1.15rem;
       margin: 0 0 1.5rem;
-      color: var(--light);
+      color: var(--gray-light);
     }
     .cta-row {
       display: flex;
@@ -99,7 +102,7 @@
       color: var(--white);
       border: 2px solid var(--accent);
     }
-    .btn-secondary:hover { background: rgba(242,242,242,0.15); }
+    .btn-secondary:hover { background: rgba(255,155,0,0.15); }
 
     .badges {
       display: flex;
@@ -130,14 +133,14 @@
       margin: 0 0 1rem;
     }
     .card {
-      background: rgba(111, 26, 27, 0.5);
-      border: 1px solid rgba(242, 242, 242, 0.35);
+      background: rgba(27, 36, 44, 0.6);
+      border: 1px solid rgba(255, 155, 0, 0.3);
       border-radius: 12px;
       padding: 1.5rem;
       margin-bottom: 1rem;
     }
     .card:last-child { margin-bottom: 0; }
-    .card p { color: var(--light); margin: 0; }
+    .card p { color: var(--gray-light); margin: 0; }
 
     .hours-grid {
       display: grid;
@@ -148,15 +151,15 @@
       justify-content: space-between;
       align-items: center;
       padding: 0.4rem 0;
-      border-bottom: 1px solid rgba(242, 242, 242, 0.2);
+      border-bottom: 1px solid rgba(255, 155, 0, 0.2);
     }
     .hours-row:last-child { border-bottom: none; }
     .hours-row .day { font-weight: 600; color: var(--white); }
-    .hours-row .time { color: var(--light); }
+    .hours-row .time { color: var(--gray-light); }
 
     .address-block {
       font-size: 1rem;
-      color: var(--light);
+      color: var(--gray-light);
     }
     .address-block strong { color: var(--white); }
     .address-block a {
@@ -175,11 +178,11 @@
       text-decoration: none;
     }
     .phone-block a:hover { text-decoration: underline; }
-    .scheduler-note { margin-top: 1rem; color: var(--light); font-size: 0.95rem; }
+    .scheduler-note { margin-top: 1rem; color: var(--gray-light); font-size: 0.95rem; }
 
     .footer {
       background: var(--dark);
-      color: var(--light);
+      color: var(--gray-light);
       text-align: center;
       padding: 1.5rem;
       font-size: 0.9rem;
